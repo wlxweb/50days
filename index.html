@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>50天练习</title>
+    <link href="./lib/bootstrap-5.2.0-beta1-dist/css/bootstrap.css" rel="stylesheet" />
+    <style>
+      .index-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container index-container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">项目</th>
+              <th scope="col">预览</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in 50" :key="item">
+              <th >Day 0{{item}}</th>
+              <td>
+                <a  class="btn btn-primary" :href="`./Porject/day0${item}`">预览</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="lib/vue/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: () => {
+          return {
+            message: 'hello',
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

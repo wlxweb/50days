@@ -1,0 +1,24 @@
+.img-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  margin-top: 10vh;
+}
+.img-list {
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+  transition: .4s;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.img-list.active {
+  flex: 4;
+}
